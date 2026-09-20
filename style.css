@@ -1,0 +1,2278 @@
+:root{--ink:#0b1220;--paper:#f4f1e9;--paper2:#ebe6da;--white:#fffdf8;--muted:#6f746f;--line:rgba(11,18,32,.14);--gold:#b99452;--gold2:#d7bd88;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;--ease:cubic-bezier(.2,.75,.2,1)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;overflow-x:hidden}body:has(dialog[open]){overflow:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--ink);color:var(--paper)}.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gold);z-index:1000}.site-header{position:fixed;top:0;left:0;right:0;height:74px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(244,241,233,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);z-index:100}.brand{display:flex;align-items:center;gap:12px;font-weight:700}.brand-mark{display:grid;place-items:center;width:35px;height:35px;background:var(--ink);color:var(--paper);font-size:11px;letter-spacing:.05em}.site-nav{display:flex;gap:22px;align-items:center}.site-nav a{font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:700;position:relative}.site-nav a:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:1px;background:var(--gold);transition:width .35s var(--ease)}.site-nav a:hover:after{width:100%}.nav-toggle{display:none;border:0;background:none;padding:10px}.nav-toggle span{display:block;width:25px;height:1px;background:var(--ink);margin:6px}section{scroll-margin-top:74px}.hero{min-height:100svh;padding:150px 7vw 50px;display:grid;align-items:center;position:relative;background:linear-gradient(120deg,#f4f1e9 0%,#f4f1e9 68%,#e8e0cf 68%,#e8e0cf 100%)}.hero-grid{width:min(1280px,100%);margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:8vw;align-items:center}.eyebrow{margin:0 0 18px;font-size:10px;text-transform:uppercase;letter-spacing:.19em;font-weight:900;color:var(--muted)}.eyebrow span{display:inline-block;width:28px;height:1px;background:var(--gold);vertical-align:middle;margin-right:10px}.hero h1{font-family:var(--serif);font-size:clamp(4rem,8vw,8rem);line-height:.88;letter-spacing:-.065em;margin:0 0 30px;font-weight:600}.hero h1 em,.section-head h2 em,.project-content h3 em,.status-card h2 em,.contact h2 em{font-style:italic;color:#857048}.hero-lede{max-width:620px;font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.65;color:#4d514e;margin:0 0 30px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:30px;padding:15px 19px;border:1px solid var(--ink);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;transition:transform .35s var(--ease),background .35s,color .35s,box-shadow .35s}.button:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(11,18,32,.12)}.button-dark{background:var(--ink);color:var(--paper)}.button-light{background:transparent}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:36px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.11em}.hero-meta span{padding-right:22px;border-right:1px solid var(--line)}.hero-meta span:last-child{border-right:0}.portrait-card{background:var(--ink);padding:14px;box-shadow:30px 30px 0 rgba(185,148,82,.18)}.portrait-placeholder {aspect-ratio:4/5;background:linear-gradient(145deg,#273247,#101827);display:grid;place-items:center;text-align:center;color:#e7dcc5;position:relative}.portrait-placeholder span{font-family:var(--serif);font-size:clamp(4rem,8vw,7rem);font-style:italic}.portrait-placeholder small{position:absolute;bottom:28px;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#b8b8b0}.portrait-caption{color:#d8d8d0;padding:16px 3px 2px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.hero-bottom{position:absolute;bottom:26px;left:7vw;right:7vw;display:flex;align-items:center;gap:15px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.16em}.scroll-line{height:1px;flex:1;background:var(--line)}.section{padding:80px 7vw}.section-head{max-width:930px;margin-bottom:60px}.section-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.8rem,5.5vw,5.6rem);line-height:1.02;letter-spacing:-.045em;margin:0}.section-note{max-width:700px;color:var(--muted);font-size:14px;margin:22px 0 0}code{background:rgba(11,18,32,.06);padding:2px 6px}.about-grid{width:min(1250px,100%);margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:9vw}.about-copy{max-width:680px;font-size:17px;color:#555954}.about-copy .lead{font-family:var(--serif);font-size:27px;line-height:1.45;color:var(--ink)}.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.stat{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:130px}.stat strong{font-family:var(--serif);font-size:38px;font-weight:500;display:block}.stat span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.dark-section{background:var(--ink);color:var(--paper)}.dark-section .eyebrow,.dark-section .section-note{color:#929896}.dark-section .section-head h2{color:var(--paper)}.timeline{max-width:1150px;margin:auto}.timeline-item{display:grid;grid-template-columns:190px 1fr;gap:40px;padding:38px 0;border-top:1px solid rgba(255,255,255,.13)}.timeline-item:last-child{border-bottom:1px solid rgba(255,255,255,.13)}.timeline-date{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9da19d;padding-top:7px}.timeline-body h3{font-family:var(--serif);font-size:32px;font-weight:500;margin:0 0 4px}.org{color:#c2a66f;margin:0 0 17px;font-size:13px}.timeline-body p:not(.org):not(.role-label),.timeline-body li{color:#aeb3b0;max-width:760px}.timeline-body ul{padding-left:18px;margin-bottom:0}.role-label{display:inline-block;color:var(--gold2)!important;font-size:9px;text-transform:uppercase;letter-spacing:.18em;margin:0 0 7px}.timeline-item.featured{padding:48px 28px;background:linear-gradient(90deg,rgba(255,255,255,.04),transparent);border-left:2px solid var(--gold)}.education-list{max-width:1150px;margin:auto}.education-card{display:grid;grid-template-columns:160px 1fr auto;gap:40px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}.education-card:last-child{border-bottom:1px solid var(--line)}.edu-year{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}.education-card h3{font-family:var(--serif);font-size:34px;font-weight:500;margin:0}.education-card p{margin:5px 0;color:#525750}.education-card span{font-size:12px;color:var(--muted)}.education-card strong{font-size:11px;text-transform:uppercase;letter-spacing:.12em;text-align:right}.gold{color:#9b793d}.gold small{font-size:9px;color:var(--muted)}.credentials{background:#e9e4d9}.certificate-grid{max-width:1250px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.certificate-card{background:var(--white);border:1px solid var(--line);cursor:pointer;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}.certificate-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(11,18,32,.14);
+    border-color: rgba(185,148,82,.45);
+}.certificate-media{aspect-ratio:1.414/1;overflow:hidden}.placeholder-media{display:grid;place-items:center;background:linear-gradient(135deg,#d7d0c1,#f7f3e8);color:#8a8579}.placeholder-media span{font-size:9px;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(11,18,32,.2);padding:8px 10px}.certificate-info{padding:20px}.certificate-info p,.honor-copy p:first-child{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 8px}.certificate-info h3{font-family:var(--serif);font-size:19px;line-height:1.2;font-weight:500;margin:0 0 10px}.certificate-info span{font-size:11px;color:var(--muted)}.projects{background:#101827}.project-grid{max-width:1250px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.project-card{min-height:390px;padding:34px;position:relative;border:1px solid rgba(255,255,255,.12);background:linear-gradient(135deg,#1a2639,#101827);overflow:hidden;transition:transform .5s var(--ease),border-color .4s}.project-card:hover{transform:translateY(-6px);border-color:rgba(215,189,136,.55)}.project-feature{grid-row:span 2;min-height:800px}.project-number{position:absolute;right:25px;top:20px;color:rgba(255,255,255,.1);font-family:var(--serif);font-size:90px}.project-content{position:absolute;left:34px;right:34px;bottom:34px}.project-content h3{font-family:var(--serif);font-size:clamp(2.5rem,4vw,5rem);line-height:.95;font-weight:500;margin:0 0 20px;color:var(--paper)}.project-content p:not(.eyebrow){color:#aeb5b4;max-width:620px}.text-link{border:0;background:none;color:inherit;padding:0;display:inline-flex;gap:9px;align-items:center;text-transform:uppercase;letter-spacing:.13em;font-size:9px;font-weight:800;cursor:pointer;border-bottom:1px solid currentColor;padding-bottom:5px}.text-link:hover{color:var(--gold2)}.skills-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.skill-group{border-top:2px solid var(--ink);padding:25px 0}.skill-group span{font-size:9px;letter-spacing:.14em;color:var(--gold)}.skill-group h3{font-family:var(--serif);font-size:32px;font-weight:500;margin:14px 0}.skill-group p{color:#575c57;line-height:2}.publication-list{max-width:1200px;margin:auto}.publication{display:grid;grid-template-columns:55px 1fr 110px;gap:25px;align-items:center;padding:28px 0;border-top:1px solid var(--line)}.publication:last-child{border-bottom:1px solid var(--line)}.publication>span{font-family:var(--serif);font-size:22px;color:#a69d89}.publication p{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 7px}.publication h3{font-family:var(--serif);font-size:25px;line-height:1.25;font-weight:500;margin:0}.disabled{opacity:.4;pointer-events:none}.honors-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:25px}.honor-card{background:#172238;border:1px solid rgba(255,255,255,.12);display:grid;grid-template-columns:42% 58%;overflow:hidden;cursor:pointer}.honor-image{min-height:340px}.honor-copy{padding:32px}.honor-copy h3{font-family:var(--serif);font-size:31px;line-height:1.1;font-weight:500;margin:0 0 17px;color:var(--paper)}.honor-copy p:not(:first-child){color:#abb2b0;font-size:14px}.status{padding-top:50px;padding-bottom:50px}.status-card{max-width:1200px;margin:auto;padding:55px;background:var(--gold);display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.status-card .eyebrow{color:#54472f}.status-card h2{font-family:var(--serif);font-size:clamp(2.5rem,4vw,4.5rem);line-height:1.02;font-weight:500;margin:0}.status-detail{border-left:1px solid rgba(11,18,32,.25);padding-left:35px}.status-detail strong{display:block;text-transform:uppercase;font-size:10px;letter-spacing:.15em;margin-bottom:10px}.status-detail span{font-size:15px;line-height:1.5}.contact{background:var(--paper2);min-height:70vh;display:grid;place-items:center}.contact-inner{width:min(1150px,100%)}.contact h2{font-family:var(--serif);font-size:clamp(3.5rem,7vw,7rem);line-height:.95;font-weight:500;letter-spacing:-.05em;margin:0 0 60px}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.contact-grid>*{padding:24px 20px 20px 0;border-right:1px solid var(--line)}.contact-grid>*:last-child{border-right:0;padding-left:20px}.contact-grid span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:8px}.contact-grid strong{font-size:14px;font-weight:600}footer{background:var(--ink);color:#9ea5a3;padding:25px 7vw;display:flex;justify-content:space-between;font-size:10px;text-transform:uppercase;letter-spacing:.12em}footer a:hover{color:var(--gold2)}.media-modal,.pdf-modal{border:0;padding:0;background:rgba(9,14,24,.96);color:var(--paper);width:min(1100px,92vw);max-height:92vh;box-shadow:0 40px 100px rgba(0,0,0,.45)}.media-modal::backdrop,.pdf-modal::backdrop{background:rgba(3,7,13,.78);backdrop-filter:blur(7px)}.modal-inner{padding:42px}.modal-inner h2,.pdf-head h2{font-family:var(--serif);font-weight:500;font-size:36px;margin:0 0 25px}.modal-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c1421;
+    min-height: 300px;
+    max-height: calc(90vh - 170px);
+    overflow: hidden;
+}
+
+.modal-media img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(90vh - 170px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}.modal-note{color:#aab0ae;font-size:12px}.modal-close{position:absolute;right:18px;top:14px;background:none;border:0;color:var(--paper);font-size:30px;cursor:pointer;z-index:2}.pdf-head{padding:32px 36px 20px;display:flex;align-items:end;gap:20px;flex-wrap:wrap}.pdf-head .eyebrow{width:100%;margin-bottom:0}.pdf-head h2{margin:0;flex:1}.pdf-head a{font-size:10px;text-transform:uppercase;letter-spacing:.13em}.pdf-frame-wrap{height:70vh;background:#2a2f37}.pdf-frame-wrap iframe{width:100%;height:100%;border:0}.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.visible{opacity:1;transform:none}.delay-1{transition-delay:.12s}@media(max-width:1050px){.site-nav{gap:14px}.site-nav a{font-size:9px}.certificate-grid{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr .7fr}}@media(max-width:800px){.site-header{height:64px;padding:0 5vw}.brand span:last-child{font-size:13px}.nav-toggle{display:block}.site-nav{position:absolute;top:64px;left:0;right:0;background:rgba(244,241,233,.98);border-bottom:1px solid var(--line);display:grid;gap:0;max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}.site-nav.open{max-height:520px}.site-nav a{padding:16px 5vw;border-top:1px solid var(--line);font-size:10px}.hero{padding:120px 6vw 80px;background:var(--paper)}.hero-grid{grid-template-columns:1fr}.hero-side{max-width:420px}.hero-bottom{display:none}.section{padding:85px 6vw}.about-grid,.project-grid,.skills-grid,.honors-grid,.status-card{grid-template-columns:1fr}.project-feature{grid-row:auto;min-height:540px}.timeline-item{grid-template-columns:1fr;gap:10px}.education-card{grid-template-columns:1fr;gap:12px}.education-card strong{text-align:left}.publication{grid-template-columns:35px 1fr}.publication .text-link{grid-column:2}.contact-grid{grid-template-columns:1fr}.contact-grid>*{border-right:0;border-bottom:1px solid var(--line);padding-left:0!important}.contact-grid>*:last-child{border-bottom:0}.status-card{gap:35px;padding:35px}.status-detail{border-left:0;border-top:1px solid rgba(11,18,32,.25);padding:25px 0 0}}@media(max-width:520px){.certificate-grid{grid-template-columns:1fr}.hero h1{font-size:4rem}.hero-meta{display:grid;gap:9px}.hero-meta span{border-right:0;padding-right:0}.honor-card{grid-template-columns:1fr}.honor-image{min-height:250px}.modal-inner{padding:35px 20px 20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+
+.portrait-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 68% 18%;
+    display: block;
+}
+/* Fine-tune Hero alignment */
+.hero-copy {
+    position: relative;
+    top: -160px;
+}
+.linkedin-button {
+    gap: 18px;
+}
+
+.linkedin-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.linkedin-mark {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.certificate-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #f4f1e9;
+}
+
+.certificate-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    display: block;
+}
+
+.certificate-media {
+    overflow: hidden;
+}
+
+.certificate-media img {
+    transition: transform .5s var(--ease);
+}
+
+.certificate-card:hover .certificate-media img {
+    transform: scale(1.025);
+}
+
+.certificate-card {
+    cursor: pointer;
+}
+
+.certification-note {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--muted);
+}
+
+/* Supreme Court architectural watermark */
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 58%;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(244, 241, 233, 1) 0%,
+            rgba(244, 241, 233, .78) 18%,
+            rgba(244, 241, 233, .30) 55%,
+            rgba(244, 241, 233, .08) 100%
+        ),
+        url("assets/supreme-court-watermark.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    opacity: .26;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Keep Hero content above the watermark */
+.hero-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-bottom {
+    position: absolute;
+    z-index: 1;
+}
+
+/* =========================================
+   HERO PORTRAIT — SUBTLE HOVER INTERACTION
+   ========================================= */
+
+.portrait-card {
+    cursor: pointer;
+    transition:
+        transform .45s var(--ease),
+        box-shadow .45s var(--ease),
+        border-color .45s var(--ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .portrait-card:hover {
+        transform: translateY(-6px);
+
+        box-shadow:
+            30px 36px 0 rgba(185,148,82,.22),
+            0 18px 38px rgba(11,18,32,.14);
+
+        border-color: rgba(185,148,82,.35);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portrait-card {
+        transition: none;
+    }
+
+    .portrait-card:hover {
+        transform: none;
+    }
+}
+
+/* =========================================
+   MEDIA VIEWER — CLEAN FIT
+   ========================================= */
+
+.media-modal {
+    overflow: hidden;
+}
+
+.media-modal .modal-inner {
+    overflow: hidden;
+}
+
+.media-modal .modal-media {
+    overflow: hidden;
+    max-height: calc(90vh - 170px);
+}
+
+.media-modal .modal-media img {
+    max-width: 100%;
+    max-height: calc(90vh - 170px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =========================================
+   FEATURED PROJECT — MOOT COURT
+   ========================================= */
+
+.project-feature {
+    padding: 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+.project-feature-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 42px 42px 30px;
+    border-bottom: 1px solid var(--line);
+}
+
+.project-feature-header h3 {
+    margin: 8px 0 8px;
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1;
+    color: var(--ink);
+}
+
+.project-meta {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.project-status {
+    padding: 8px 12px;
+    border: 1px solid rgba(185,148,82,.45);
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.project-feature-body {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 34px;
+    padding: 34px 42px;
+}
+
+.project-description {
+    align-self: center;
+}
+
+.project-description p {
+    max-width: 620px;
+    margin: 0 0 18px;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.project-role {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+}
+
+.project-role span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+
+.project-role strong {
+    font-size: 14px;
+    color: var(--ink);
+}
+
+.project-feature-image {
+    min-height: 390px;
+}
+
+.project-gallery {
+    padding: 0 42px 34px;
+}
+
+.project-gallery-heading,
+.project-archive-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+
+.project-gallery-grid {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 14px;
+}
+
+.project-gallery-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 240px;
+    padding: 0;
+    border: 1px solid var(--line);
+    background: var(--paper2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-feature-image .project-gallery-item {
+    height: 390px;
+}
+
+.project-gallery-large {
+    min-height: 310px;
+}
+
+.project-gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:
+        transform .5s var(--ease),
+        filter .5s var(--ease);
+}
+
+.project-gallery-large img {
+    object-fit: contain;
+    background: var(--paper);
+}
+
+.project-gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(11,18,32,.62),
+        transparent 45%
+    );
+    pointer-events: none;
+}
+
+.project-gallery-item span {
+    position: absolute;
+    z-index: 2;
+    left: 18px;
+    bottom: 16px;
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+}
+
+.project-gallery-item:hover {
+    border-color: rgba(185,148,82,.45);
+}
+
+.project-gallery-item:hover img {
+    transform: scale(1.025);
+}
+
+.project-archive {
+    padding: 0 42px 42px;
+}
+
+.project-archive-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.project-document {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        transform .4s var(--ease),
+        border-color .4s var(--ease),
+        box-shadow .4s var(--ease);
+}
+
+.project-document:hover {
+    transform: translateY(-4px);
+    border-color: rgba(185,148,82,.45);
+    box-shadow: 0 14px 28px rgba(11,18,32,.08);
+}
+
+.project-document > div {
+    display: grid;
+    gap: 6px;
+}
+
+.document-number {
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.project-document strong {
+    font-family: var(--serif);
+    font-size: 20px;
+}
+
+.project-document small {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.document-action {
+    flex-shrink: 0;
+    color: var(--ink);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.project-recognition {
+    font-family: inherit;
+}
+
+@media (max-width: 800px) {
+
+    .project-feature-header {
+        padding: 30px 24px 24px;
+    }
+
+    .project-feature-body {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+    }
+
+    .project-feature-image {
+        min-height: 300px;
+    }
+
+    .project-feature-image .project-gallery-item {
+        height: 300px;
+    }
+
+    .project-gallery {
+        padding: 0 24px 28px;
+    }
+
+    .project-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-gallery-large {
+        min-height: 250px;
+    }
+
+    .project-archive {
+        padding: 0 24px 30px;
+    }
+
+    .project-archive-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .project-gallery-item img,
+    .project-document {
+        transition: none;
+    }
+
+}
+
+/* =========================================
+   MOOT COURT PROJECT — FINAL OVERRIDES
+   ========================================= */
+
+.project-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+
+.project-feature {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 0;
+    padding: 0;
+}
+
+.project-feature-header h3 {
+    color: var(--paper);
+}
+
+.project-feature-header .eyebrow {
+    color: var(--gold2);
+}
+
+.project-meta {
+    color: #aeb5b4;
+}
+
+.project-description p {
+    color: #b8bebc;
+}
+
+.project-role {
+    border-top-color: rgba(255,255,255,.12);
+}
+
+.project-role span {
+    color: var(--gold2);
+}
+
+.project-role strong {
+    color: var(--paper);
+}
+
+.project-gallery-heading,
+.project-archive-heading {
+    color: #aeb5b4;
+    border-bottom-color: rgba(255,255,255,.12);
+}
+
+.project-feature-image {
+    min-height: 420px;
+}
+
+.project-feature-image .project-gallery-item {
+    height: 420px;
+}
+
+.project-gallery-item {
+    background: #182437;
+    border-color: rgba(255,255,255,.12);
+}
+
+.project-gallery-item:hover {
+    border-color: rgba(215,189,136,.55);
+}
+
+.project-archive {
+    border-top: 1px solid rgba(255,255,255,.12);
+    padding-top: 30px;
+}
+
+.project-document {
+    border-color: rgba(255,255,255,.12);
+    background: rgba(255,255,255,.025);
+    color: var(--paper);
+}
+
+.project-document:hover {
+    border-color: rgba(215,189,136,.55);
+    box-shadow: 0 14px 28px rgba(0,0,0,.18);
+}
+
+.project-document strong {
+    color: var(--paper);
+}
+
+.project-document small {
+    color: #aeb5b4;
+}
+
+.document-action {
+    color: var(--gold2);
+}
+
+.project-status {
+    color: var(--gold2);
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-feature {
+        grid-column: auto;
+    }
+
+    .project-feature-header {
+        flex-direction: column;
+    }
+
+    .project-feature-image {
+        min-height: 300px;
+    }
+
+    .project-feature-image .project-gallery-item {
+        height: 300px;
+    }
+
+}
+
+/* =========================================
+   MOOT COURT — SYMMETRICAL PORTRAIT GALLERY
+   ========================================= */
+
+.project-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.project-gallery-grid .project-gallery-item {
+    aspect-ratio: 3 / 4;
+    min-height: 0;
+    height: auto;
+}
+
+.project-gallery-grid .project-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: var(--paper);
+}
+
+
+/* Featured certificate */
+
+.project-feature-image .project-gallery-item {
+    height: 420px;
+}
+
+.project-feature-image .project-gallery-item img {
+    object-fit: contain;
+    object-position: center;
+    background: var(--paper);
+}
+
+
+/* Keep the two gallery cards equal on mobile */
+
+@media (max-width: 800px) {
+
+    .project-gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-gallery-grid .project-gallery-item {
+        aspect-ratio: 3 / 4;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .project-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-gallery-grid .project-gallery-item {
+        aspect-ratio: 3 / 4;
+    }
+
+}
+
+/* Make the single Moot Court Script archive card full width */
+
+.project-archive-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-document {
+    width: 100%;
+}
+
+/* Mobile Hero Correction */
+@media (max-width: 800px) {
+    .hero-copy {
+        top: 0;
+    }
+}
+
+/* Project 02 — external PDF interaction */
+.project-external {
+    cursor: pointer;
+}
+.project-external .text-link {
+    color: var(--gold2);
+}
+
+/* =========================================
+   PROJECT 03 — SELECTED DRAFTING
+   ========================================= */
+
+.project-drafting {
+    cursor: default;
+}
+
+.project-drafting .project-content {
+    position: relative;
+    z-index: 2;
+}
+
+.drafting-archive {
+    display: grid;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.drafting-archive .project-document {
+    padding: 16px 18px;
+    background: rgba(255,255,255,.025);
+    border-color: rgba(255,255,255,.12);
+    cursor: pointer;
+}
+
+.drafting-archive .project-document:hover {
+    transform: translateY(-3px);
+    border-color: rgba(215,189,136,.55);
+    box-shadow: 0 12px 24px rgba(0,0,0,.16);
+}
+
+.drafting-archive .project-document strong {
+    font-size: 17px;
+}
+
+.drafting-archive .project-document small {
+    display: block;
+    color: #aeb5b4;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.drafting-archive .document-action {
+    color: var(--gold2);
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+/* =========================================
+   PROJECT 02 & 03 — FINAL CARD LAYOUT
+   ========================================= */
+
+/* Project 02 — vertically balanced */
+.project-external {
+    display: flex;
+    align-items: center;
+    padding: 42px 34px;
+    min-height: 560px;
+}
+
+.project-external .project-content {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+}
+
+
+/* Project 03 — natural document archive layout */
+.project-drafting {
+    padding: 42px 34px;
+    min-height: 560px;
+    overflow: hidden;
+}
+
+.project-drafting .project-content {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+}
+
+
+/* Drafting archive */
+.project-drafting .drafting-archive {
+    margin-top: 28px;
+    display: grid;
+    gap: 12px;
+}
+
+
+/* Individual drafting document */
+.project-drafting .project-document {
+    width: 100%;
+    min-height: 68px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Document title */
+.project-drafting .project-document strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+
+/* Document category */
+.project-drafting .project-document small {
+    display: block;
+    margin-top: 4px;
+    font-size: 9px;
+    line-height: 1.35;
+}
+
+
+/* PDF action */
+.project-drafting .document-action {
+    flex-shrink: 0;
+    color: var(--gold2);
+    font-size: 9px;
+    letter-spacing: .12em;
+}
+
+
+/* Hover */
+.project-drafting .project-document:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Keep Project 02 button consistent */
+.project-external .text-link {
+    color: var(--gold2);
+}
+
+/* =========================================
+   PROJECT 02 — SELECTED RESEARCH
+   ========================================= */
+
+.project-research {
+    padding: 42px 34px;
+    min-height: 560px;
+    overflow: hidden;
+}
+
+.project-research .project-content {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+}
+
+.project-research .research-archive {
+    margin-top: 28px;
+    display: grid;
+    gap: 12px;
+}
+
+.project-research .project-document {
+    width: 100%;
+    min-height: 68px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.project-research .project-document strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.project-research .project-document small {
+    display: block;
+    margin-top: 4px;
+    font-size: 9px;
+    line-height: 1.35;
+}
+
+.project-research .document-action {
+    flex-shrink: 0;
+    color: var(--gold2);
+    font-size: 9px;
+    letter-spacing: .12em;
+}
+
+.project-research .project-document:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   PROJECT 02 & 03 — SYMMETRICAL ARCHIVES
+   ========================================= */
+
+.project-research .project-document,
+.project-drafting .project-document {
+    height: 76px;
+    min-height: 76px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Keep long research titles neatly contained */
+.project-research .project-document strong,
+.project-drafting .project-document strong {
+    line-height: 1.15;
+}
+
+
+/* Give the text side enough room */
+.project-research .project-document > div,
+.project-drafting .project-document > div {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Keep OPEN PDF aligned consistently */
+.project-research .document-action,
+.project-drafting .document-action {
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+/* =========================================
+   PROJECT 02 & 03 — CATEGORY WATERMARKS
+   ========================================= */
+
+/* Hide the old project numbers */
+.project-research .project-number,
+.project-drafting .project-number {
+    display: none;
+}
+
+
+/* Base watermark positioning */
+.project-research,
+.project-drafting {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Keep all actual content above the watermark */
+.project-research .project-content,
+.project-drafting .project-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* -----------------------------------------
+   PROJECT 02 — RESEARCH WATERMARK
+   ----------------------------------------- */
+
+.project-research::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    width: 170px;
+    height: 170px;
+    opacity: .12;
+    pointer-events: none;
+    z-index: 1;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220' fill='none'%3E%3Cg stroke='%23d7bd88' stroke-width='3'%3E%3Cpath d='M38 154h104'/%3E%3Cpath d='M45 154V76c0-7 6-12 12-12h68c7 0 12 5 12 12v78'/%3E%3Cpath d='M56 86h68M56 103h58M56 120h48'/%3E%3Ccircle cx='157' cy='71' r='37'/%3E%3Cpath d='m184 98 25 25'/%3E%3Cpath d='M141 71h32M157 55v32'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    transform: rotate(-7deg);
+}
+
+
+/* -----------------------------------------
+   PROJECT 03 — DRAFTING WATERMARK
+   ----------------------------------------- */
+
+.project-drafting::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    width: 175px;
+    height: 175px;
+    opacity: .12;
+    pointer-events: none;
+    z-index: 1;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220' fill='none'%3E%3Cg stroke='%23d7bd88' stroke-width='3'%3E%3Crect x='43' y='35' width='112' height='145' rx='3'/%3E%3Cpath d='M62 68h74M62 86h74M62 104h56M62 122h65'/%3E%3Cpath d='M111 155 169 97l17 17-58 58-27 8 10-25Z'/%3E%3Cpath d='m169 97 8-8 17 17-8 8'/%3E%3Cpath d='m111 155 17 17'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    transform: rotate(5deg);
+}
+
+/* =========================================
+   MOOT COURT — CATEGORY WATERMARK
+   ========================================= */
+
+/* Remove the old Completed badge */
+.project-feature .project-status {
+    display: none;
+}
+
+
+/* Position the watermark independently */
+.project-feature-header {
+    position: relative;
+}
+
+
+/* Subtle Moot Court / Trial watermark */
+.project-feature-header::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 0;
+    width: 185px;
+    height: 150px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 200' fill='none'%3E%3Cg stroke='%23d7bd88' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M120 35v115'/%3E%3Cpath d='M75 150h90'/%3E%3Cpath d='M120 35 72 50 120 65 168 50 120 35Z'/%3E%3Cpath d='M72 50v38'/%3E%3Cpath d='M168 50v38'/%3E%3Cpath d='M48 88h48'/%3E%3Cpath d='M144 88h48'/%3E%3Cpath d='M48 88c0 20 48 20 48 0'/%3E%3Cpath d='M144 88c0 20 48 20 48 0'/%3E%3Cpath d='M120 35V20'/%3E%3Cpath d='M105 20h30'/%3E%3Cpath d='M120 65v40'/%3E%3Ccircle cx='120' cy='105' r='6'/%3E%3C/g%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: .12;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Keep actual Project 01 content above the watermark */
+.project-feature-header > div,
+.project-feature-header .project-status {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Match Projects 02 & 03 title treatment */
+.project-feature-header h3 em {
+    color: var(--gold2);
+    font-style: italic;
+}
+
+
+/* Keep the watermark subtle on smaller screens */
+@media (max-width: 800px) {
+    .project-feature-header::after {
+        width: 150px;
+        height: 125px;
+        top: -8px;
+        right: -5px;
+        opacity: .10;
+    }
+}
+
+/* =========================================
+   MOOT COURT — FINAL VISUAL ALIGNMENT
+   ========================================= */
+
+/* Smaller, better-positioned Moot Court watermark */
+.project-feature-header::after {
+     display: none;
+}
+
+/* =========================================
+   EXPERIENCE — DOCUMENT & RECOGNITION CARDS
+   ========================================= */
+
+.experience-documents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.experience-document {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid rgba(255, 253, 248, .16);
+    background: rgba(255, 255, 255, .025);
+    color: var(--paper);
+    text-decoration: none;
+    transition:
+        background .3s var(--ease),
+        border-color .3s var(--ease),
+        transform .3s var(--ease);
+}
+
+.experience-document:hover {
+    background: rgba(255, 255, 255, .055);
+    border-color: rgba(185, 148, 82, .55);
+    transform: translateY(-2px);
+}
+
+.experience-document div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.experience-document strong {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--paper);
+}
+
+.experience-document small {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: .04em;
+    color: rgba(244, 241, 233, .55);
+}
+
+.experience-document span {
+    flex-shrink: 0;
+    font-family: var(--sans);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--gold2);
+    white-space: nowrap;
+}
+
+.experience-recognition {
+    border-color: rgba(185, 148, 82, .28);
+}
+
+.experience-recognition strong {
+    color: var(--gold2);
+}
+
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .experience-document {
+        padding: 14px 15px;
+        gap: 14px;
+    }
+
+    .experience-document strong {
+        font-size: 15px;
+    }
+
+    .experience-document span {
+        font-size: 8px;
+    }
+}
+
+/* =========================================
+   EDUCATION — GOLD MEDAL CERTIFICATE PROOFS
+   ========================================= */
+
+.edu-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.education-proofs {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.education-proof {
+    width: 110px;
+    height: 78px;
+    padding: 0;
+    border: 1px solid rgba(185,148,82,.35);
+    background: #f4f1e9;
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+        transform .35s var(--ease),
+        border-color .35s var(--ease),
+        box-shadow .35s var(--ease);
+}
+
+.education-proof img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.education-proof:hover {
+    transform: translateY(-3px);
+    border-color: rgba(185,148,82,.75);
+    box-shadow: 0 8px 18px rgba(11,18,32,.12);
+}
+
+/* Publication link alignment */
+.publication {
+    grid-template-columns: 55px 1fr 140px;
+}
+
+.publication .text-link {
+    white-space: nowrap;
+    justify-self: end;
+}
+
+/* Publication link hover interaction */
+.publication .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform .3s var(--ease);
+}
+
+.publication .text-link:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   HONORS & AWARDS — DOCUMENT PRESENTATION
+   ========================================= */
+
+.honor-image {
+    min-height: 340px;
+    overflow: hidden;
+    background: #111a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+
+.honor-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform .5s var(--ease);
+}
+
+.honor-card:hover .honor-image img {
+    transform: scale(1.025);
+}
+
+/* Honors — only image and View Image are interactive */
+.honor-card {
+    cursor: default;
+}
+
+.honor-card .honor-image {
+    cursor: pointer;
+}
+
+.honor-card .text-link {
+    cursor: pointer;
+}
+
+/* Honors & Awards — interactive tile hover */
+.honor-card {
+    transition:
+        transform .45s var(--ease),
+        border-color .4s var(--ease),
+        box-shadow .45s var(--ease);
+}
+
+.honor-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(215,189,136,.55);
+    box-shadow: 0 14px 30px rgba(0,0,0,.18);
+}
+
+/* Honors — separate tile and image hover behavior */
+
+/* Whole tile: border only */
+.honor-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(215,189,136,.55);
+}
+
+/* Image: zoom only when directly hovered */
+.honor-card .honor-image {
+    overflow: hidden;
+}
+
+.honor-card .honor-image img {
+    transition: transform .5s var(--ease);
+}
+
+.honor-card .honor-image:hover img {
+    transform: scale(1.025);
+}
+
+/* About — refined reading width */
+.about-grid {
+    display: block;
+    width: 100%;
+}
+
+.about-copy {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-copy p {
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* =========================================
+   PREMIUM IMAGE VIEWER — FINAL OVERRIDES
+   ========================================= */
+
+.media-modal {
+    width: min(1200px, 94vw);
+    max-width: 1200px;
+    max-height: 94vh;
+    padding: 0;
+    border: 0;
+    background: rgba(9, 14, 24, .97);
+    color: var(--paper);
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, .55);
+}
+
+.media-modal::backdrop {
+    background: rgba(3, 7, 13, .84);
+    backdrop-filter: blur(9px);
+}
+
+.media-modal .modal-inner {
+    padding: 32px;
+}
+
+.media-modal .modal-inner h2 {
+    margin: 0 0 20px;
+    padding-right: 55px;
+    font-family: var(--serif);
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.media-modal .modal-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(94vh - 150px);
+    min-height: 360px;
+    overflow: hidden;
+    background: #0c1421;
+    border: 1px solid rgba(255, 253, 248, .08);
+}
+
+.media-modal .modal-media img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.image-viewer-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 6px;
+
+    background: rgba(9, 14, 24, .9);
+    border: 1px solid rgba(244, 241, 233, .16);
+    backdrop-filter: blur(12px);
+}
+
+.image-viewer-controls button {
+    min-width: 38px;
+    height: 34px;
+    padding: 0 10px;
+
+    border: 0;
+    background: transparent;
+
+    color: var(--paper);
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background .25s var(--ease),
+        color .25s var(--ease);
+}
+
+.image-viewer-controls button:hover {
+    background: rgba(185, 148, 82, .18);
+    color: var(--gold2);
+}
+
+.image-viewer-controls .zoom-level {
+    min-width: 52px;
+    color: rgba(244, 241, 233, .65);
+}
+
+.image-viewer-controls .zoom-level:hover {
+    background: transparent;
+    color: rgba(244, 241, 233, .65);
+}
+
+.media-modal .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    z-index: 10;
+
+    width: 38px;
+    height: 38px;
+    padding: 0;
+
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(244, 241, 233, .35);
+
+    color: var(--paper);
+    font-size: 25px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background .25s var(--ease),
+        border-color .25s var(--ease),
+        color .25s var(--ease);
+}
+
+.media-modal .modal-close:hover {
+    background: rgba(185, 148, 82, .15);
+    border-color: rgba(185, 148, 82, .7);
+    color: var(--gold2);
+}
+
+@media (max-width: 800px) {
+
+    .media-modal {
+        width: 96vw;
+        max-height: 94vh;
+    }
+
+    .media-modal .modal-inner {
+        padding: 24px 18px 18px;
+    }
+
+    .media-modal .modal-inner h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+        padding-right: 45px;
+    }
+
+    .media-modal .modal-media {
+        height: calc(94vh - 125px);
+        min-height: 300px;
+    }
+
+    .image-viewer-controls {
+        bottom: 12px;
+    }
+}
+
+/* =========================================
+   IMAGE VIEWER — INTERACTION REFINEMENT
+   ========================================= */
+
+.media-modal .modal-media {
+    overflow: hidden;
+}
+
+.media-modal .modal-media img {
+    cursor: zoom-in;
+    transition: transform .16s ease-out;
+}
+
+.media-modal .modal-media img.is-dragging {
+    cursor: grabbing;
+    transition: none;
+}
+
+/* Controls now sit BELOW the image */
+
+.media-modal .image-viewer-controls {
+    position: static;
+    transform: none;
+
+    width: fit-content;
+    margin: 12px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    background: rgba(9, 14, 24, .94);
+    border: 1px solid rgba(244, 241, 233, .16);
+    backdrop-filter: blur(12px);
+}
+
+/* Make the control bar slightly more refined */
+
+.media-modal .image-viewer-controls button {
+    min-width: 42px;
+    height: 34px;
+}
+
+.media-modal .image-viewer-controls .zoom-level {
+    min-width: 58px;
+}
+
+/* When image is zoomed, indicate that it can be moved */
+
+.media-modal .modal-media img.is-zoomed {
+    cursor: grab;
+}
+
+.media-modal .modal-media img.is-dragging {
+    cursor: grabbing;
+}
+
+@media (max-width: 800px) {
+
+    .media-modal .image-viewer-controls {
+        margin-top: 10px;
+    }
+
+}
+
+/* =========================================
+   IMAGE VIEWER — FIXED VIEWPORT
+   ========================================= */
+
+.media-modal .modal-media {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+.media-modal .modal-media img {
+    flex: 0 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform-origin: center center;
+    will-change: transform;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.site-nav a.active:after {
+    width: 100%;
+}
+
+/* Give the LinkedIn column the same breathing room as the others */
+.contact-grid > :nth-child(2) {
+    padding-left: 24px;
+}
+
+/* CONTACT LINK HOVER */
+.contact-grid a {
+    cursor: pointer;
+    transition: color .3s var(--ease), transform .3s var(--ease);
+}
+
+.contact-grid a:hover {
+    color: var(--gold);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   WEBSITE AUTHORSHIP CREDIT
+   ========================================= */
+
+.site-credit {
+    margin: 34px auto 0;
+    width: fit-content;
+    padding: 10px 18px;
+    border: 1px solid rgba(11,18,32,.14);
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: default;
+    transition: color .3s var(--ease), border-color .3s var(--ease);
+}
+
+.site-credit:hover {
+    color: var(--gold);
+    border-color: rgba(185,148,82,.45);
+}
+
+/* =========================================
+   AUTHORSHIP CREDIT — FINAL SPACING
+   ========================================= */
+
+.site-credit {
+    margin-top: 46px;
+    font-size: 10px;
+    color: #5f625f;
+    user-select: none;
+    
+}
+
+/* =========================================
+   SKILLS — SECTION DISTINCTION
+   ========================================= */
+
+#skills {
+    background: var(--paper2);
+}
+
+/* HEADER BRAND MARK — uses the same artwork as the favicon */
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================================
+   UI TEXT — PREVENT ACCIDENTAL SELECTION
+   ========================================= */
+
+.site-nav a,
+.nav-toggle,
+.button,
+.eyebrow,
+.hero-meta,
+.site-credit,
+footer a {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* =========================================
+   IMAGE VIEWER — GLASS / CINEMATIC OPENING
+   ========================================= */
+
+.media-modal {
+    opacity: 0;
+    transform: scale(.985);
+    filter: blur(2px);
+    transition:
+        opacity .42s cubic-bezier(.22,.61,.36,1),
+        transform .52s cubic-bezier(.16,1,.3,1),
+        filter .42s cubic-bezier(.22,.61,.36,1),
+        display .42s allow-discrete;
+}
+
+.media-modal[open] {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+.media-modal::backdrop {
+    opacity: 0;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    transition:
+        opacity .65s cubic-bezier(.22,.61,.36,1),
+        backdrop-filter .75s cubic-bezier(.16,1,.3,1);
+}
+
+.media-modal[open]::backdrop {
+    opacity: 1;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+@starting-style {
+    .media-modal[open]::backdrop {
+        opacity: 0;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+    }
+}
+
+/* =========================================
+   MOBILE — EDUCATION ACHIEVEMENT ALIGNMENT
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .edu-achievement {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .education-proofs {
+        justify-content: flex-start;
+    }
+
+}
+
+/* Image viewer — enable touch dragging when zoomed */
+
+.media-modal .modal-media img.is-zoomed {
+    touch-action: none;
+}
+
+/* =========================================
+   IMAGE VIEWER — MOBILE GESTURE CONTROL
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .media-modal {
+        touch-action: none;
+    }
+
+    .media-modal .modal-media {
+        touch-action: none;
+    }
+
+}
+
+/* =========================================
+   MOBILE — REMOVE TAP HIGHLIGHT
+   ========================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    a,
+    button,
+    img,
+    [role="button"],
+    .certificate-card
+    .certificate-media,
+    .honor-image,
+    .portrait-placeholder,
+    .project-gallery-item,
+    .project-recognition,
+    .education-proof,
+    .text-link,
+    .open-project {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+}
+
+/* =========================================
+   MOBILE — CERTIFICATION TAP CLEANUP
+   ========================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .certificate-card,
+    .certificate-card *,
+    .certificate-media,
+    .certificate-media img {
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-touch-callout: none;
+        outline: none !important;
+    }
+
+    .certificate-card:focus,
+    .certificate-card:focus-visible,
+    .certificate-card:active,
+    .certificate-media:focus,
+    .certificate-media:focus-visible,
+    .certificate-media:active,
+    .certificate-media img:focus,
+    .certificate-media img:focus-visible,
+    .certificate-media img:active {
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        box-shadow: none !important;
+    }
+}
+
+
+/* =========================================
+   MOBILE — MOOT COURT SCRIPT DOCUMENT
+   Match Experience PDF tile styling
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .project-feature .project-archive .project-document {
+        min-height: 76px;
+        height: 76px;
+        padding: 14px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        box-sizing: border-box;
+    }
+
+    .project-feature .project-archive .project-document > div {
+        flex: 1;
+        min-width: 0;
+        display: grid;
+        gap: 4px;
+    }
+
+    .project-feature .project-archive .project-document strong {
+        font-family: var(--serif);
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .project-feature .project-archive .project-document small {
+        font-size: 9px;
+        line-height: 1.35;
+        color: var(--muted);
+    }
+
+    .project-feature .project-archive .document-action {
+        flex-shrink: 0;
+        color: var(--gold2);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .12em;
+        white-space: nowrap;
+    }
+
+}
+
+/* =========================================
+   MOBILE — PROJECTS 02 & 03 REFINEMENT
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    /* Let long document titles grow naturally */
+    .project-research .project-document,
+    .project-drafting .project-document {
+        height: auto;
+        min-height: 0;
+        padding: 16px 14px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 14px;
+        box-sizing: border-box;
+    }
+
+    /* Keep long titles inside their own card */
+    .project-research .project-document > div,
+    .project-drafting .project-document > div {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .project-research .project-document strong,
+    .project-drafting .project-document strong {
+        display: block;
+        font-size: 15px;
+        line-height: 1.15;
+        overflow-wrap: break-word;
+    }
+
+    .project-research .project-document small,
+    .project-drafting .project-document small {
+        display: block;
+        margin-top: 5px;
+        font-size: 9px;
+        line-height: 1.35;
+    }
+
+    /* Keep OPEN PDF stable on the right */
+    .project-research .document-action,
+    .project-drafting .document-action {
+        margin-left: 0;
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 8px;
+        align-self: center;
+    }
+
+    /* Remove category watermarks on mobile.
+       They remain completely unchanged on desktop. */
+    .project-research::before,
+    .project-drafting::before {
+        display: none;
+    }
+
+}
+
+/* =========================================
+   MOBILE — PROJECT SVG WATERMARKS
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .project-research::before,
+    .project-drafting::before {
+        display: block;
+        width: 120px;
+        height: 120px;
+        top: 22px;
+        right: 20px;
+        opacity: .12;
+        pointer-events: none;
+    }
+
+}
+
+/* =========================================
+   MOBILE — PUBLICATIONS REFINEMENT
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .publication {
+        display: block;
+        padding: 32px 0 34px;
+    }
+
+    .publication > span {
+        display: block;
+        margin: 0 0 16px;
+        font-family: var(--serif);
+        font-size: 24px;
+        line-height: 1;
+        color: #a69d89;
+    }
+
+    .publication p {
+        margin: 0 0 12px;
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .publication h3 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: clamp(27px, 7vw, 36px);
+        line-height: 1.12;
+        letter-spacing: -.02em;
+    }
+
+    .publication .text-link {
+        display: inline-flex;
+        grid-column: auto;
+        margin-top: 28px;
+        justify-self: start;
+    }
+
+}
+
+/* =========================================
+   MOBILE — SITE CREDIT REFINEMENT
+   ========================================= */
+
+.site-credit span {
+    display: inline;
+}
+
+@media (max-width: 800px) {
+
+    .site-credit {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .site-credit span {
+        display: block;
+    }
+
+}
+
+/* =========================================
+   MOBILE NAV — PREMIUM INTERACTION
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    body.menu-open {
+        overflow: hidden;
+        touch-action: none;
+    }
+
+    .site-nav {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            max-height .45s var(--ease),
+            opacity .28s ease,
+            transform .45s var(--ease),
+            visibility 0s linear .45s;
+    }
+
+    .site-nav.open {
+        max-height: 520px;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+
+        transition:
+            max-height .45s var(--ease),
+            opacity .32s ease,
+            transform .45s var(--ease),
+            visibility 0s linear 0s;
+    }
+
+    .site-nav a {
+        opacity: 0;
+        transform: translateY(-8px);
+        transition:
+            opacity .28s ease,
+            transform .4s var(--ease);
+    }
+
+    .site-nav.open a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .site-nav.open a:nth-child(1) { transition-delay: .04s; }
+    .site-nav.open a:nth-child(2) { transition-delay: .07s; }
+    .site-nav.open a:nth-child(3) { transition-delay: .10s; }
+    .site-nav.open a:nth-child(4) { transition-delay: .13s; }
+    .site-nav.open a:nth-child(5) { transition-delay: .16s; }
+    .site-nav.open a:nth-child(6) { transition-delay: .19s; }
+    .site-nav.open a:nth-child(7) { transition-delay: .22s; }
+    .site-nav.open a:nth-child(8) { transition-delay: .25s; }
+    .site-nav.open a:nth-child(9) { transition-delay: .28s; }
+}
+
+/* =========================================
+   MOBILE NAV — BACKDROP + ICON REFINEMENT
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    /* -----------------------------------------
+       1. LOCK + BLUR THE PAGE BEHIND MENU
+       ----------------------------------------- */
+
+    body.menu-open::before {
+        content: "";
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        background: rgba(11, 18, 32, .18);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+
+        z-index: 90;
+        pointer-events: auto;
+
+        animation: mobileMenuBackdropIn .35s var(--ease) both;
+    }
+
+    @keyframes mobileMenuBackdropIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Keep the header and menu above the backdrop */
+    .site-header {
+        z-index: 100;
+    }
+
+    .site-nav {
+        z-index: 101;
+    }
+
+
+    /* -----------------------------------------
+       2. PREMIUM MENU ICON
+       Two lines → downward chevron
+       ----------------------------------------- */
+
+    .nav-toggle {
+        position: relative;
+        z-index: 102;
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+    }
+
+    .nav-toggle span {
+        position: absolute;
+        width: 25px;
+        height: 1.5px;
+        margin: 0;
+        background: var(--ink);
+
+        transform-origin: center;
+        transition:
+            transform .45s var(--ease),
+            opacity .25s ease,
+            width .35s var(--ease);
+    }
+
+    .nav-toggle span:first-child {
+        transform: translateY(-4px);
+    }
+
+    .nav-toggle span:last-child {
+        transform: translateY(4px);
+    }
+
+    /* Open state — elegant downward chevron */
+    .nav-toggle[aria-expanded="true"] span:first-child {
+        width: 18px;
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    .nav-toggle[aria-expanded="true"] span:last-child {
+        width: 18px;
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 800px) {
+    #progress {
+        display: none;
+    }
+}
+
+/* =========================================
+   MOBILE NAV — REMOVE ACTIVE UNDERLINE
+   ========================================= */
+
+@media (max-width: 800px) {
+    .site-nav a.active::after {
+        width: 0;
+    }
+}
+
+/* =========================================
+   MOBILE NAV — REMOVE UNDERLINE TRANSITION
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .site-nav a::after,
+    .site-nav a:hover::after,
+    .site-nav a.active::after {
+        width: 0 !important;
+        transition: none !important;
+    }
+
+}
+
+/* =========================================
+   HERO ACTIONS — EQUAL BUTTON SIZING
+   ========================================= */
+
+.hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.hero-actions .button {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+/* Mobile — equal full-width buttons */
+@media (max-width: 800px) {
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+        flex: none;
+    }
+
+}
+
+/* =========================================
+   FINAL — PROJECT 02 & 03 DOCUMENT HEIGHTS
+   ========================================= */
+
+/* Desktop */
+@media (min-width: 1101px) {
+    .project-research .project-document,
+    .project-drafting .project-document {
+        height: 90px;
+        min-height: 90px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 801px) and (max-width: 1100px) {
+    .project-research .project-document,
+    .project-drafting .project-document {
+        height: 120px;
+        min-height: 120px;
+    }
+}
+
+/* Mobile — keep the successful natural-height behavior */
+@media (max-width: 800px) {
+    .project-research .project-document,
+    .project-drafting .project-document {
+        height: auto;
+        min-height: 108px;
+    }
+}
