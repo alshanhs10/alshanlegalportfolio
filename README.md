@@ -21,18 +21,9 @@ Project documents are stored in `assets/projects/`.
 ### Awards
 Award images are stored in `assets/awards/`.
 
-### Resume
-The current resume is stored at:
-
-`assets/Alshan_Husain_Shah_Resume.pdf`
-
 ## Publications
 
 Publication entries contain links to their respective articles and publication pages.
-
-## Important
-
-Only publish non-confidential legal work, documents and materials that you are permitted to make publicly available.
 
 ## Accessibility & Performance
 
