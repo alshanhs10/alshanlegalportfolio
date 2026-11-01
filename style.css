@@ -2276,3 +2276,35 @@ footer a {
         min-height: 108px;
     }
 }
+
+/* =========================================
+   CERTIFICATES — AUTOMATIC ROW ALIGNMENT
+   ========================================= */
+
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Desktop — 4 certificates per row */
+.certificate-card {
+    flex: 0 0 calc(25% - 15px);
+    min-width: 0;
+}
+
+/* Tablet — 2 certificates per row */
+@media (max-width: 1050px) {
+    .certificate-card {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* Mobile — 1 certificate per row */
+@media (max-width: 520px) {
+    .certificate-card {
+        flex-basis: 100%;
+    }
+}
+
